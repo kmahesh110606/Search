@@ -1,0 +1,89 @@
+<html lang="en">
+    <head>
+    <title>Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+    
+
+    <div class="header">
+
+        <!-- Google Logo (new 2025) adapted from Google's own Source Code-->
+        <svg class="google-logo" aria-label="Go to Google Home" height="24" width="24" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <clipPath id="_jYw1aObSKJWMseMPv5zi4AM_3">
+            <path d="M12 10v4.5h6.47c-.5 2.7-3 4.74-6.47 4.74-3.9 0-7.1-3.3-7.1-7.25S8.1 4.75 12 4.75c1.8 0 3.35.6 4.6 1.8l3.4-3.4C18 1.2 15.24 0 12 0 5.4 0 0 5.4 0 12s5.4 12 12 12c7 0 11.5-4.9 11.5-11.7 0-.8-.1-1.54-.2-2.3H12z"></path></clipPath><filter id="_jYw1aObSKJWMseMPv5zi4AM_4"><feGaussianBlur stdDeviation="1"></feGaussianBlur></filter><g style="clip-path:url(#_jYw1aObSKJWMseMPv5zi4AM_3)">
+                <foreignObject style="filter:url(#_jYw1aObSKJWMseMPv5zi4AM_4)" height="28" transform="translate(-2,-2)" width="28">
+                <div style="width:100%;height:100%;background:conic-gradient(#FF4641,#FD5061 40deg,#FD5061 60deg,#3186FF 85deg,#3186FF 117deg,#00A5B7 142deg,#0EBC5F 167deg,#0EBC5F 200deg,#6CC500 226deg,#FFCC00 253deg,#FFD314 268deg,#FFCC00 292deg,#FF4641 327deg)"></div>
+            </foreignObject>
+            <rect fill="#3186FF" height="8" width="16" x="11" y="8"></rect>
+        </g></svg>
+
+
+        <button class="headerbtn adv" onclick="window.location.href = 'advanced.html';">
+            <div class="button-content">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-140v-320h320v320H80Zm80-80h160v-160H160v160Zm60-340 220-360 220 360H220Zm142-80h156l-78-126-78 126ZM863-42 757-148q-21 14-45.5 21t-51.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T813-204L919-98l-56 56ZM660-200q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM320-380Zm120-260Z"/></svg>
+                </div>
+                <span class="headertext">Advanced Search</span>
+            </div>
+        </button>
+
+
+        <button class="headerbtn imgs" onclick="window.location.href = 'images.html';">
+            <div class="button-content">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    height="24px" viewBox="0 -960 960 960" 
+                    width="24px" fill="#e3e3e3">
+                    <path d="M240-280h480L597-444q-11-2-22.5-5t-22.5-7L450-320l-90-120-120 160Zm-40 160q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h200v80H200v560h560v-213l80 80v133q0 33-23.5 56.5T760-120H200Zm280-360Zm382 56L738-548q-21 14-45 21t-51 7q-74 0-126-52.5T464-700q0-75 52.5-127.5T644-880q75 0 127.5 52.5T824-700q0 27-8 52t-20 46l122 122-56 56ZM644-600q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z"/>
+                    </svg>
+                </div>
+                <span class="headertext">Images</span>
+            </div>
+        </button>
+
+    </div>
+    
+
+
+
+    <!-- Form data given by CS50w team and editited by me as needed -->
+    <div class="form-container">
+
+        <img src="https://www.gstatic.com/marketing-cms/assets/images/f5/d3/a7f9db7045429cb6dc6be56bdcbe/google-logo-about.svg" height="100" width="200" alt="Google Logo" style="margin-top: auto">
+
+        <form action="https://google.com/search">
+            
+            <div class="search-row">
+            <input type="text" class="searchbox" name="q" placeholder="Search Google or type a URL"
+            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button type="submit" class="barbtn" >
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                height="24px" viewBox="0 -960 960 960" 
+                width="24px" fill="#e3e3e3">
+                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+            <button type="button" class="barbtn" onclick="window.location.href = 'https://lens.google.com';">
+                <svg class="Gdd5U" 
+                focusable="false" 
+                viewBox="0 -960 960 960" 
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="var(--bbQxAb)" 
+                d="M480-320q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm240 160q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160Zm-440 40q-66 0-113-47t-47-113v-80h80v80q0 33 23.5 56.5T280-200h200v80H280Zm480-320v-160q0-33-23.5-56.5T680-680H280q-33 0-56.5 23.5T200-600v120h-80v-120q0-66 47-113t113-47h80l40-80h160l40 80h80q66 0 113 47t47 113v160h-80Z"></path>
+                </svg>
+            </button>
+            </div>
+            <br>
+            <center>
+            <input type="submit" class="searchbtn" value="Google Search">
+            <input type="button" class="luckybtn" value="I'm feeling lucky" onclick="window.location.href = 'https://doodles.google/';">
+                </center>
+        </form>
+    </div>
+</body>
+
+</html>
